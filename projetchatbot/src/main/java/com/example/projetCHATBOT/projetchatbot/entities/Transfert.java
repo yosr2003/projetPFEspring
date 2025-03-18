@@ -17,6 +17,9 @@ public class Transfert {
 	private String deviseTransfert;
 	private LocalDateTime  datecre;
 	private EtatDoss etat;
+	private LocalDate dateEcheance;
+	private String natureTransfert;
+	private Double frais;
 
 	public Transfert() {
 		super();
@@ -54,6 +57,36 @@ public class Transfert {
 
 	public void setDeviseTransfert(String deviseTransfert) {
 		this.deviseTransfert = deviseTransfert;
+	}
+
+
+	public LocalDate getDateEcheance() {
+		return dateEcheance;
+	}
+
+
+	public void setDateEcheance(LocalDate dateEcheance) {
+		this.dateEcheance = dateEcheance;
+	}
+
+
+	public String getNatureTransfert() {
+		return natureTransfert;
+	}
+
+
+	public void setNatureTransfert(String natureTransfert) {
+		this.natureTransfert = natureTransfert;
+	}
+
+
+	public Double getFrais() {
+		return frais;
+	}
+
+
+	public void setFrais(Double frais) {
+		this.frais = frais;
 	}
 
 

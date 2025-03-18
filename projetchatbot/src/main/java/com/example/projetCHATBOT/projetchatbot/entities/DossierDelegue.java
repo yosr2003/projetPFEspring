@@ -1,6 +1,7 @@
 package com.example.projetCHATBOT.projetchatbot.entities;
 
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -18,7 +19,12 @@ public class DossierDelegue {
 	private String etatDoss;
 	private LocalDateTime  datclo;
 	private String motifclo;
+	private LocalDate dateDebut;
+	private LocalDate dateExpiration;
+	private Double solde;
 	
+	
+
 	public DossierDelegue() {
 		super();
 	}
@@ -28,6 +34,29 @@ public class DossierDelegue {
 	
 	
 /// getters and setters
+	public LocalDate getDateDebut() {
+		return dateDebut;
+	}
+
+	public void setDateDebut(LocalDate dateDebut) {
+		this.dateDebut = dateDebut;
+	}
+
+	public LocalDate getDateExpiration() {
+		return dateExpiration;
+	}
+
+	public void setDateExpiration(LocalDate dateExpiration) {
+		this.dateExpiration = dateExpiration;
+	}
+
+	public Double getSolde() {
+		return solde;
+	}
+
+	public void setSolde(Double solde) {
+		this.solde = solde;
+	}
 	public String getIdDossier() {
 		return idDossier;
 	}
